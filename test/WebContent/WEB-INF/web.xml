@@ -12,7 +12,7 @@
   
   <servlet>
 	<servlet-name>MyFirstServelet</servlet-name>
-	<servlet-class>com.sdzee.servlets.MyFirstServelet</servlet-class>
+	<servlet-class>test.servlets.MyFirstServelet</servlet-class>
   </servlet>
   <servlet-mapping>
 	<servlet-name>MyFirstServelet</servlet-name>
