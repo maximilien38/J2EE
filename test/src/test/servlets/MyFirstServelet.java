@@ -1,5 +1,8 @@
 package test.servlets;
 
-public class MyFirstServelet {
+import javax.servlet.http.HttpServlet;
+
+public class MyFirstServelet extends HttpServlet{
+	
 
 }
