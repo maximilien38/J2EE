@@ -10,19 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class MyFirstServelet extends HttpServlet{
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
-		response.setContentType("text/html");
-		response.setCharacterEncoding( "UTF-8" );
-		PrintWriter out = response.getWriter();
-		out.println("<!DOCTYPE html>");
-		out.println("<html>");
-		out.println("<head>");
-		out.println("<meta charset=\"utf-8\" />");
-		out.println("<title>My first servlet</title>");
-		out.println("</head>");
-		out.println("<body>");
-		out.println("<p>I'm the best in the world ! </p>");
-		out.println("</body>");
-		out.println("</html>");
+		this.getServletContext().getRequestDispatcher( "/WEB-INF/MyFirstJSP.jsp" ).forward( request, response );
 	}
 
 }
