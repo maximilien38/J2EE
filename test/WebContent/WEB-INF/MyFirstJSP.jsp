@@ -1,12 +1,41 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page pageEncoding="UTF-8" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-    <p>Ceci est une page générée depuis une JSP.</p>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Test</title>
+    </head>
+    <body>
+        <p>Ceci est une page générée depuis une JSP.</p>
+        <p>
+            ${test}
+            ${param.auteur}
+        </p>
+        <p>
+            Récupération du bean :
+            ${coyote.prenom}
+            ${coyote.nom}
+        </p>
+        <p>
+            Récupération de la liste :
+            <%
+            List<Integer> liste = (List<Integer>) request.getAttribute( "liste" );
+            for( Integer i : liste ){
+                out.println(i + " : ");	
+            }
+            %>
+        </p>
+        <p>
+            Récupération du jour du mois :
+            <%
+            Integer jourDuMois = (Integer) request.getAttribute( "jour" );
+            if ( jourDuMois % 2 == 0 ){
+                out.println("Jour pair : " + jourDuMois);
+            } else {
+                out.println("Jour impair : " + jourDuMois);
+            }
+            %>
+        </p>
+    </body>
 </html>
