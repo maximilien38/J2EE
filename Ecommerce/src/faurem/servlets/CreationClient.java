@@ -26,7 +26,7 @@ public class CreationClient extends HttpServlet {
 		if(client.getAdresseLivraison() == "" || client.getNom() == ""  || client.getTelephone() == "")
 		{
 			message = "Erreur - Vous n'avez pas rempli tous les champs obligatoires. </br>"
-					+ "<a href=\"\" >Cliquez ici</a> pour accéder au formulaire de création d'un client.";
+					+ "<a href=\"creerClient.jsp\" >Cliquez ici</a> pour accéder au formulaire de création d'un client.";
 		}
 		else
 		{

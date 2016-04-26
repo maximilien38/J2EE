@@ -18,4 +18,13 @@
 	<servlet-name>CreationClient</servlet-name>
 	<url-pattern>/creationClient</url-pattern>
 </servlet-mapping>
+
+<servlet>
+	<servlet-name>CreationCommande</servlet-name>
+	<servlet-class>faurem.servlets.CreationCommande</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>CreationCommande</servlet-name>
+	<url-pattern>/creationCommande</url-pattern>
+</servlet-mapping>
 </web-app>

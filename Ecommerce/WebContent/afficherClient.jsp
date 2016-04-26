@@ -5,9 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>afficher un client</title>
+<link type="text/css" rel="stylesheet" href="inc/style.css" />
 </head>
 <body>
-	${ message } </br>
+	<span class="info">${ message } </br></span>
 	Nom : ${ client.getNom() } </br> 
 	Prénom : ${ client.getPrenom() } </br>
 	Adresse : ${ client.getAdresseLivraison() } </br>

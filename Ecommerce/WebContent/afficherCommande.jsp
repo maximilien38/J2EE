@@ -4,9 +4,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>afficher un commande</title>
+<link type="text/css" rel="stylesheet" href="inc/style.css" />
 </head>
 <body>
-
+	<span class="info">${ message } </br></span>
+	<p> Client </p>
+	<p> Nom : ${ commande.client.getNom() } </p> 
+	<p> Prénom : ${ commande.client.getPrenom() } </p>
+	<p> Adresse : ${ commande.client.getAdresseLivraison() } </p>
+	<p> Numéro de téléphone : ${ commande.client.getTelephone() } </p>
+	<p> Email : ${ client.getAdresseMail() } </p>
+	<p> Commande</p>
+	<p> Date :</p>
+	<p> Montant : ${ commande.getMontant()  }</p>
+	<p> Mode de paimenet : ${ commande.getModePaiment() }</p>
+	<p> Statut du paiment: ${ commande.getStatutPaiment()  }</p>
+	<p> Mode de livraison : ${ commande.getModeLivraison()  }</p>
+	<p> Statut de la livraison : ${ commande.getStatutLivraison()  }</p>
 </body>
 </html>

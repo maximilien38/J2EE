@@ -2,11 +2,13 @@ package faurem.beans;
 
 public class Commande {
 	
+	Client client;
 	Double montant;
 	String modePaiment;
 	String statutPaiment;
 	String modeLivraison;
 	String statutLivraison;
+	private String date;
 	
 	public Double getMontant() {
 		return montant;
@@ -39,5 +41,19 @@ public class Commande {
 		this.statutLivraison = statutLivraison;
 	}
 	
+	public String getDateCommande() {
+		return date;	
+	}
+	
+	public void setDateCommande(String date) {
+		this.date = date;	
+	}
+	
+	public Client getClient() {
+		return client;
+	}
+	public void setClient(Client client) {
+		this.client = client;
+	}
 	
 }
